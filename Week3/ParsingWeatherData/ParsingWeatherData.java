@@ -126,8 +126,17 @@ public class ParsingWeatherData {
     public void testFileWithColdestTemperaturePrintAll (){
         String fileColdest = fileWithColdestTemperature();
         System.out.println("Coldest day was in file " + fileColdest);
-        
-        FileResource fr = new FileResource("data/2014/"+fileColdest);
+        String start = "";
+        if(fileColdest.indexOf("2012") != -1){
+            start = "data/2012/";
+        }else if(fileColdest.indexOf("2013") != -1){
+            start = "data/2013/";
+        }else if(fileColdest.indexOf("2014") != -1){
+            start = "data/2014/";
+        }else{
+            start = "data/2015/";
+        }
+        FileResource fr = new FileResource(start+fileColdest);
         CSVRecord coldest = coldestHourInFile(fr.getCSVParser());
         System.out.println("Coldest temperature on that day was " + coldest.get("TemperatureF"));
         allTemperaturasInDays(fr.getCSVParser());

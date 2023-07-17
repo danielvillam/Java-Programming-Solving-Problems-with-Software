@@ -86,13 +86,24 @@ public class WhichCountriesExport {
         parser = fr.getCSVParser();
         listExportersTwoProducts(parser,"fish", "nuts");
         
-        parser = fr.getCSVParser();
+        //parser = fr.getCSVParser();
         count = numberOfExporters(parser,"gold");
         System.out.println("Number of gold exporters: "+count);
         
         parser = fr.getCSVParser();
         countryInformation = countryInfo(parser,"Nauru");
         System.out.println(countryInformation);
+        
+        parser = fr.getCSVParser();
+        bigExporters(parser,"$999,999,999,999");
+        
+        //Code for quiz: CSV Files and Basic Statistics in Java
+        parser = fr.getCSVParser();
+        listExportersTwoProducts(parser,"cotton", "flowers");
+        
+        parser = fr.getCSVParser();
+        count = numberOfExporters(parser,"cocoa");
+        System.out.println("Number of gold exporters: "+count);
         
         parser = fr.getCSVParser();
         bigExporters(parser,"$999,999,999,999");
