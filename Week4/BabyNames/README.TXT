@@ -1,12 +1,3 @@
-------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all he/she needs to know. The comments should usually include at least:
-------------------------------------------------------------------------
-
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
-AUTHORS:
-USER INSTRUCTIONS:
+PROJECT TITLE: BabyBirths
+AUTHORS: https://github.com/danielvillam
+DESCRIPTION: An analysis is carried out on the births in the USA saved in ".csv" files, how to find the total number of births, how many of them are male and female, the range in which the names are found, what my name would be if I had been born in another year, depending on the range of the name.
